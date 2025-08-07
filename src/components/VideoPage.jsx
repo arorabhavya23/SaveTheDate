@@ -1,13 +1,19 @@
 import React, { useRef, useEffect } from 'react';
-import bgVideo from '/src/assets/video/bg_vid_01.mp4'; // Adjust the path as necessary
-import './VideoPage.css'; // Assuming you have a CSS file for styling
+import bgVideo from '/src/assets/video/bg_vid_01.mp4';
+import './VideoPage.css';
 
 function VideoPage() {
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.5; // Set playback speed to 0.5x
+      videoRef.current.playbackRate = 0.5;
+      // Ensure muted is set via property for iOS
+      videoRef.current.muted = true;
+      videoRef.current.playsInline = true;
+      videoRef.current.autoplay = true;
+      videoRef.current.load();
+      videoRef.current.play().catch(() => {});
     }
   }, []);
 
@@ -22,6 +28,9 @@ function VideoPage() {
         className="video-bg"
         src={bgVideo}
         type="video/mp4"
+        // Explicit attributes for iOS
+        playsinline="true"
+        muted="true"
       />
     </div>
   );
