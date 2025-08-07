@@ -5,6 +5,7 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SaveDateInfo from './components/SaveDateInfo';
 import VideoPage from './components/VideoPage';
+import Navbar from './components/Navbar';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <>
       <VideoPage />
       <SaveDateInfo />
+      <Navbar />
     </>
   )
 }

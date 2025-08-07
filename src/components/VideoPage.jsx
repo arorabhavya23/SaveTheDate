@@ -30,7 +30,6 @@ function VideoPage() {
         type="video/mp4"
         // Explicit attributes for iOS
         playsinline="true"
-        muted="true"
       />
     </div>
   );
