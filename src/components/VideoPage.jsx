@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import bgVideo from '/src/assets/video/bg_vid_01.mp4'; // Adjust the path as necessary
 import './VideoPage.css'; // Assuming you have a CSS file for styling
 
 function VideoPage() {
@@ -19,7 +20,7 @@ function VideoPage() {
         muted
         playsInline
         className="video-bg"
-        src="/bg_vid_01.mp4"
+        src={bgVideo}
         type="video/mp4"
       />
     </div>
