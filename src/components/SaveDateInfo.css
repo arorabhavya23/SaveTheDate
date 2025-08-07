@@ -13,6 +13,11 @@
     display: inline-block;
     height: 200px
 }
+
+.save-date-container {
+  position: relative;
+  margin-top: -60px; /* Adjust this value as needed */
+}
 body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -43,10 +48,10 @@ body {
     background: #fff;
 }
 
-.time{
-    font-size: 2rem;
+.date-info{
+    font-family: monospace;
     font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 10px;
     color: #fff;
-    letter-spacing: 2px;
-    position: relative;
 }

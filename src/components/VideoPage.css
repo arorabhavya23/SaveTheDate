@@ -11,6 +11,7 @@
   height: 100vh;
   object-fit: cover;
   z-index: 0;
+  filter: brightness(70%);
 }
 
 .video-bg-title {
