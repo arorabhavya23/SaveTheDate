@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.main-names {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+    color: #fff;
+    padding: 2rem;
+}
+.rose-icon {
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    height: 200px
+}
+
+.save-date-container {
+  position: relative;
+  margin-top: -60px; /* Adjust this value as needed */
+}
+body {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.subheading{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 7px;
+    position: relative;
+}
+.subheading::before {
+    position: absolute;
+    top: 50%;
+    left: -150px;
+    content: '';
+    width: 130px;
+    height: 2px;
+    background: #fff;
+}
+.subheading::after {
+    position: absolute;
+    top: 50%;
+    right: -140px;
+    content: '';
+    width: 130px;
+    height: 2px;
+    background: #fff;
+}
+
+.date-info{
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 10px;
+    color: #fff;
+}

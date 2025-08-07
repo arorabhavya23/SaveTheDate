@@ -1,0 +1,36 @@
+/* Example: src/components/Navbar.css */
+.custom-navbar {
+  background: rgba(0, 0, 0, 0) !important; /* transparent black */
+  box-shadow: none;
+  border: none;
+}
+
+a.nav-names {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem;
+}
+
+a.nav-link {
+  margin: 0 1rem;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+a.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: purple;
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+
+a.nav-link:hover::after {
+  width: 100%;
+}
