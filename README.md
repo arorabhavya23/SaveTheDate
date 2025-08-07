@@ -1,12 +1,21 @@
-# React + Vite
+# Save the date
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## A simple an elegant wedding invite website for Bhavya and Diksha
 
-Currently, two official plugins are available:
+* Build using Vite + React
+* has a static page for Save the date information with a video playing in bg
+* Might have some copyrighted content, intended for just personal use no commercial use intended
+* To have a navbar and further sections like our story bride and groom rsvp and Photos
+* Using react to have an option to further connect with a backend if need to send mails or connect with a DB to share and showcase photographs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+# Build and Deploy information
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* branch `gh-pages` is used for deploying on github pages
+* branch `basic-code` has the react code will move in master soon
+* can be build in local using `npm run dev`
+* to build a distributable code run `npm run build`
+* to deploy the latest version run `npm run deploy` in local terminal this would update the code on `gh-pages` branch and trigger github actions
+* once all the actions are green the code can be viewed on github pages
+* [Save the Date](https://arorabhavya23.github.io/SaveTheDate/) use this link to access the website
