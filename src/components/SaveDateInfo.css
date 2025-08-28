@@ -2,10 +2,21 @@
 
 .main-names {
   font-family: "Great Vibes", cursive;
-  font-size: 5rem;
+  font-size: 0rem;
     color: #fff;
-    padding: 2rem;
+    padding: 0rem;
+    opacity: 0;
+    transition: font-size 2.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              padding 2.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 1.5s ease;
 }
+
+.main-names.fade-in {
+  opacity: 1;
+  font-size: 5rem;
+  padding: 2rem;
+}
+
 .rose-icon {
     font-size: 2rem;
     color: #fff;
@@ -28,22 +39,33 @@ body {
     color: #fff;
     letter-spacing: 7px;
     position: relative;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subheading.up {
+  transform: translateY(-40px);
+}
+
+.subheading.down {
+  transform: translateY(40px);
 }
 .subheading::before {
     position: absolute;
     top: 50%;
-    left: -150px;
+    left: -250px;
     content: '';
-    width: 130px;
+    width: 250px;
     height: 2px;
     background: #fff;
 }
 .subheading::after {
     position: absolute;
     top: 50%;
-    right: -140px;
+    right: -250px;
     content: '';
-    width: 130px;
+    width: 250px;
     height: 2px;
     background: #fff;
 }

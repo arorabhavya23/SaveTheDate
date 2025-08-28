@@ -15,7 +15,7 @@ function App() {
       <>
       <VideoPage />
       <SaveDateInfo />
-      <Navbar />
+      {/* <Navbar /> */}
     </>
   )
 }
