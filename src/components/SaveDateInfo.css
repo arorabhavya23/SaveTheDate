@@ -16,6 +16,17 @@
   font-size: 5rem;
   padding: 2rem;
 }
+.date-info{
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 3em;
+    letter-spacing: 10px;
+    color: #fff;
+}
+
+.save-date-container{
+  position: relative;
+}
 
 .rose-icon {
     font-size: 2rem;
@@ -25,55 +36,43 @@
     height: 200px
 }
 
-.save-date-container {
-  position: relative;
-  margin-top: -60px; /* Adjust this value as needed */
-}
 body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .subheading{
-    font-size: 12px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 7px;
-    position: relative;
-    margin-bottom: 0.5rem;
+    background: #fff;
+    position: absolute;
     margin-top: 0.5rem;
-    transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1);
+    top: 50vh;
+    left: 15vw;
+    right: 15vw;
+    height: 2px;
+    transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1), 
+                top 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subheading.up {
-  transform: translateY(-40px);
+  transform: translateY(-20px);
 }
 
 .subheading.down {
-  transform: translateY(40px);
-}
-.subheading::before {
-    position: absolute;
-    top: 50%;
-    left: -250px;
-    content: '';
-    width: 250px;
-    height: 2px;
-    background: #fff;
-}
-.subheading::after {
-    position: absolute;
-    top: 50%;
-    right: -250px;
-    content: '';
-    width: 250px;
-    height: 2px;
-    background: #fff;
+  transform: translateY(30px);
+  top: 57vh;
+  transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1), 
+                top 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.date-info{
-    font-family: monospace;
-    font-weight: 600;
-    font-size: 3em;
-    letter-spacing: 10px;
-    color: #fff;
+@media (max-width: 768px) {
+  .main-names.fade-in {
+    font-size: 3rem;
+    padding: 1rem;
+  }
+  .date-info {
+    font-weight: 200;
+    font-size: 1.5em;
+  }
+  .subheading {
+    right: 10px;
+    left: 10px;
+  }
 }

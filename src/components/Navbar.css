@@ -1,8 +1,14 @@
 /* Example: src/components/Navbar.css */
 .custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   background: rgba(0, 0, 0, 0) !important; /* transparent black */
   box-shadow: none;
   border: none;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s;
 }
 
 a.nav-names {
@@ -33,4 +39,48 @@ a.nav-link::after {
 
 a.nav-link:hover::after {
   width: 100%;
+}
+
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav.flex-row {
+    flex-direction: column !important;
+    align-items: flex-start;
+    background: rgba(255, 254, 254, 0.068);
+    position: fixed;
+    top: 100%;
+    right: 0;
+    width: 50vw;
+    max-width: 300px;
+    padding: 1rem 1.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0 8px 24px rgba(255, 254, 254, 0.068);
+    display: none;
+    z-index: 100;
+    
+  }
+  .navbar-nav.flex-row.open {
+    display: flex;
+      backdrop-filter: blur(10px);
+  transition: background 0.3s;
+  }
+  .navbar-toggler {
+    display: block;
+      backdrop-filter: blur(10px);
+  transition: background 0.3s;
+  }
+  .nav-link {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+      backdrop-filter: blur(10px);
+  transition: background 0.3s;
+  }
 }

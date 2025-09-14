@@ -5,5 +5,7 @@ import svgr from 'vite-plugin-svgr'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: 'https://arorabhavya23.github.io/SaveTheDate/',
+  base: process.env.NODE_ENV === 'production'
+    ? 'https://arorabhavya23.github.io/SaveTheDate/'
+    : '/',
 })
