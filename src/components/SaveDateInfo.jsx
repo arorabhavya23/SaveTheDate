@@ -12,7 +12,7 @@ useEffect(() => {
 
   return (
     <div className="container save-date-container">
-				<div className="row js-fullheight justify-content-center d-flex align-items-center" style={{height: '897px'}}>
+				<div className="row js-fullheight justify-content-center d-flex align-items-center" style={{height: '90vh'}}>
 					<div className="col-md-12">
 						<div className="text text-center">
 							<div className="icon">

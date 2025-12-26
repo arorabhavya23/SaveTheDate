@@ -4,7 +4,7 @@
   position: fixed;
 }
 
-.video-bg {
+.video-bg{
   position: absolute;
   top: 0;
   left: 0;
@@ -15,12 +15,26 @@
   filter: brightness(70%);
 }
 
+.image-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+  filter: brightness(70%);
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   .video-bg {
   top: 0;
   left: 0;
   height: 110vh;
   width: 100vw;
+  }
+  .image-bg {
+    object-position: -60vw;
   }
 }
 

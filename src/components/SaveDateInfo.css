@@ -43,7 +43,7 @@ body {
     background: #fff;
     position: absolute;
     margin-top: 0.5rem;
-    top: 50vh;
+    top: 45vh;
     left: 15vw;
     right: 15vw;
     height: 2px;
@@ -52,12 +52,12 @@ body {
 }
 
 .subheading.up {
-  transform: translateY(-20px);
+  transform: translateY(-30px);
 }
 
 .subheading.down {
   transform: translateY(30px);
-  top: 57vh;
+  top: 52vh;
   transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1), 
                 top 3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -72,6 +72,7 @@ body {
     font-size: 1.5em;
   }
   .subheading {
+    top: 50vh;
     right: 10px;
     left: 10px;
   }
